@@ -1,5 +1,5 @@
-export default function StudentProfile() {
-    
+export default function StudentProfile({student}) {
+
     return (
         <>
         </>

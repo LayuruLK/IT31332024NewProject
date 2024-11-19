@@ -1,4 +1,5 @@
 import './App.css';
+import FontSize from './components/FontSize.js';
 import StudentTable from './components/StudentTable.js';
 import { useState } from 'react'; 
 
@@ -9,13 +10,11 @@ function App() {
 
   return (
     <div className="App" style={{fontSize}}>
-     <h1>Student Information Portal</h1>
-     
-     <button onClick={() => setFontSize('8px')}>S</button>
-     <button onClick={() => setFontSize('16px')}>M</button>
-     <button onClick={() => setFontSize('24px')}>L</button>
-     
-     <StudentTable/>
+      <h1>Student Information Portal</h1>
+      <hr></hr>
+    
+      <FontSize/>
+      <StudentTable/>
     </div>
   );
 }
