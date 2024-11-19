@@ -13,17 +13,19 @@ function App() {
 
   return (
     <>
-        <div className="App" style={{ fontSize }}>
-          <h1>Student Information Portal</h1>
-          <hr></hr>
-          <FontSize setFontSize={setFontSize}/>
-          <StudentTable setSelectedStudent={setSelectedStudent}/>
-          <StudentProfile student={selectedStudent}/>
-        </div>
+        <h1>Student Information Portal</h1>
+        <hr></hr>
+        <FontSize setFontSize={setFontSize}/>
+        <hr></hr>
+      <div className='outerDiv' style={{ fontSize }}>
+          <div className="leftDiv" >
+            <StudentTable setSelectedStudent={setSelectedStudent}/>       
+          </div>
 
-        <div>
-
-        </div>
+          <div className='rightDiv'>
+            <StudentProfile student={selectedStudent}/>
+          </div>
+      </div>
     </>
   );
 }

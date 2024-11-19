@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+}
+
+td{
+    width: 20%;
+}
+
+table .fn {
+    width: 25%;
+}
+
+table .ln {
+    width: 25%;
+}
+
+table .c {
+    width: 35%;
+}

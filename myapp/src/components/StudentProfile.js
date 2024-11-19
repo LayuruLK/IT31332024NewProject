@@ -1,33 +1,37 @@
+import './StudentProfile.css'
+
 export default function StudentProfile({student}) {
 
     return (
         <>
-            <table>
+            <table border={'1px'}>
                <tr>
-               <img className="profile" 
-                src={require('../assets/profilepic/'+student.profilePic)} 
-                alt="Profile"/>
+                <td rowSpan={9} className='img'>
+                    <img className="profile" 
+                        src={require('../assets/profilepic/'+student.profilePic)} 
+                        alt="Profile"/>
+                </td>
                </tr>
                <tr>
-                    <p>ID: {student.studentId}</p>
+                <td><p>ID: {student.studentId}</p></td>
                </tr>
                <tr>
-                    <p>Full Name: {student.firstName} {student.lastName}</p>
+                <td><p>Full Name: {student.firstName} {student.lastName}</p></td>
                </tr>
                <tr>
-                    <p>Age: {student.age}</p>
+                <td><p>Age: {student.age}</p></td>
                </tr>
                <tr>
-                    <p>Course: {student.course}</p>
+                <td><p>Course: {student.course}</p></td>
                </tr>
                <tr>
-                    <p>Gender: {student.gender}</p>
+                <td><p>Gender: {student.gender}</p></td>
                </tr>
                <tr>
-                    <p>Addresss: {student.address.city} {student.address.country}</p>
+                 <td><p>Addresss: {student.address.city} {student.address.country}</p></td>
                </tr>
                <tr>
-                    <p>Skills: {student.skills.join(',' )}</p>
+                <td><p>Skills: {student.skills.join(',' )}</p></td>
                </tr>
             </table>
         </>
