@@ -1,10 +1,12 @@
 import './App.css';
-import { Students } from './StudentsDb';
+import StudentTable from './components/StudentTable.js';
+import { students } from './StudentsDb.js';
 
 function App() {
   return (
     <div className="App">
      <h1>Student Information Portal</h1>
+     <StudentTable/>
     </div>
   );
 }
