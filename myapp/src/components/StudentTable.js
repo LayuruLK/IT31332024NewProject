@@ -18,7 +18,7 @@ export default function StudentTable() {
                             <td>{student.lastName}</td>
                             <td>{student.course}</td>
                             <td>{student.address.country}</td>
-                            <td><button>View Profile</button></td>
+                            <td><button >View Profile</button></td>
                         </tr>
                     ))}
                 
