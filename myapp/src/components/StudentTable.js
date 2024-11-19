@@ -1,6 +1,6 @@
 import { students } from '../StudentsDb';
 
-export default function StudentTable() {
+export default function StudentTable({setSelectedStudent}) {
     return(
         <>
             <table border={'1px'}>
@@ -18,7 +18,7 @@ export default function StudentTable() {
                             <td>{student.lastName}</td>
                             <td>{student.course}</td>
                             <td>{student.address.country}</td>
-                            <td><button >View Profile</button></td>
+                            <td><button onClick={() => setSelectedStudent(student)}>View Profile</button></td>
                         </tr>
                     ))}
                 
